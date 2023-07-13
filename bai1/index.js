@@ -1,3 +1,4 @@
+let container = document.querySelector(".in");
 let a, b;
 a = prompt("Nhập số bắt đầu của dãy số (a): ");
 do {
@@ -20,6 +21,7 @@ for (let i = a; i <= b; i++) {
         sum += i;
     }
 }
-console.log(
-    "Tổng số nguyên tố của chuỗi từ " + a + " đến " + b + " là: " + sum
-);
+const element = document.createElement("div");
+element.innerText =
+    "Tổng số nguyên tố của chuỗi từ " + a + " đến " + b + " là: " + sum;
+container.appendChild(element);
