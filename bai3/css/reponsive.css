@@ -1,0 +1,27 @@
+/* PC */
+@media only screen and (max-width: 1024px) {
+}
+
+/* Mobile */
+@media only screen and (max-width: 940px) {
+    .container {
+        max-width: calc(100% - 30px);
+        margin: 100px auto;
+    }
+    .navbar {
+        display: block;
+    }
+    .navbar__list {
+        margin-top: 30px;
+    }
+    .item {
+        border-radius: 8px;
+        border: 1px solid black;
+        margin-left: 5px;
+    }
+    .user__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
